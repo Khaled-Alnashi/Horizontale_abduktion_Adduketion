@@ -84,9 +84,7 @@ while True:
         if hand == 0:
             angle, difference, length, length1 = detector.findAngle(img, 15, 13, 11)
 
-            # Extract minimum and maximum values from text file Read text file
-            f = open(r"../Schulter AußenrotationInne rotation/angle_file.txt", "r")
-            f.close()
+            
             # bar for left arm
             volPer1 = np.interp(length, [100, 340], [100, 0])
             volBar1 = np.interp(length, [100, 340], [100, 650])
@@ -201,9 +199,7 @@ while True:
         else:
             angle, difference, length, length1 = detector.findAngle(img, 16, 14, 12)
 
-            # Extract minimum and maximum values from text file Read text file
-            f = open(r"../Schulter AußenrotationInne rotation/angle_file.txt", "r")
-            f.close()
+            
 
             # bar for right arm
             volPer1 = np.interp(length, [100, 340], [100, 0])
